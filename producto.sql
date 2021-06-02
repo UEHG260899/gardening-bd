@@ -5,7 +5,7 @@ CREATE TABLE [dbo].[Producto] (
     [descripcion_producto] NCHAR (100)  NULL,
     [precio_producto]      DECIMAL (18) NULL,
     [ultima_actualizacion] DATE         NULL,
-    [imagen_producto]      NCHAR (10)   NULL,
+    [imagen_producto]      NCHAR (50)   NULL,
     [cantidad_existencia]  INT          NULL,
     [stock]                INT          NULL,
     [descuento]            INT          NULL,
