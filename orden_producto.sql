@@ -4,5 +4,6 @@ CREATE TABLE [dbo].[OrdenProducto](
     [cantidad] INT NOT NULL,
     [id_orden] INT NOT NULL,
     PRIMARY KEY CLUSTERED ([id_orden_p] ASC),
-    FOREIGN KEY ([id_orden]) REFERENCES [dbo].[OrdenCliente] ([id_orden])
+    FOREIGN KEY ([id_orden]) REFERENCES [dbo].[OrdenCliente] ([id_orden]),
+    FOREIGN KEY ([id_producto]) REFERENCES [dbo].[Producto] ([id_producto])
 );
