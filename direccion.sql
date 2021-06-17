@@ -6,7 +6,7 @@ CREATE TABLE [dbo].[Direccion] (
     [estado]       VARCHAR (100)   NOT NULL,
     [municipio]    VARCHAR (100)   NOT NULL,
     [no_exterior]  VARCHAR (5)     NOT NULL,
-    [no_interior]  INT             NULL,
+    [cp]  VARCHAR(50)             NULL,
     PRIMARY KEY CLUSTERED ([id_direccion] ASC),
     FOREIGN KEY ([id_cliente]) REFERENCES [dbo].[Cliente] ([id_cliente])
 );
